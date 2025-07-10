@@ -43,11 +43,11 @@
 }
 
 .restuarantCard {
-  width: 260px;
+  width: 250px;
   /* height: 300px; */
   /* border: 1px solid burlywood; */
   padding: 5px;
-  margin: 5px;
+  margin: 15px;
   box-shadow: 0px 0px 3px;
   border-radius: 10px;
 }
@@ -58,7 +58,8 @@
 }
 
 .res-img {
-  width: 260px;
+  width: 250px;
+  height:260px;
   border-radius: 10px;
 }
 
@@ -129,4 +130,32 @@
   padding: 10px;
   border-radius: 10px;
   border: 0;
+}
+
+.error-main-container{
+  width: 500px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.error-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-message{
+  display:flex;
+  align-items: center;
+}
+
+.error-img
+{
+  width: 150px;
+  border-radius: 100%;
+}
+
+.items-card >ul>li{
+  list-style-type:none;
 }
