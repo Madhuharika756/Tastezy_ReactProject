@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
     <>
       <div className="relative w-[290px] m-4 rounded-t-4xl hover:rounded-2xl hover:scale-105 transition duration-300 ease-out">
         <div className="res-logo">
-          <img src={CDN_LINK + cloudinaryImageId} alt="res-logo" className="w-full h-60 rounded-4xl" />
+          <img src={CDN_LINK + cloudinaryImageId} alt="res-logo" className="w-full h-62 rounded-4xl" />
         </div>
         <div className="pl-3 mb-2 pb-2 rounded-b-2xl">
           <h3 className="text-lg font-bold" >{name}</h3>

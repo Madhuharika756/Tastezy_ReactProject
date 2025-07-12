@@ -18,7 +18,7 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     setAllRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
@@ -37,14 +37,16 @@ const Body = () => {
           <input type="text" className="search w-2xl mr-3 p-2 bg-gray-200 rounded-xl" value={searchText} onChange={(e) => {
             setSearchtext(e.target.value);
           }} />
-          <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer" onClick={() => {
+          <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer" 
+          onClick={() => {
             const filteredData = allRestaurant.filter((res) => res?.info?.name?.toLowerCase().includes(searchText.toLowerCase()));
             console.log(filteredData);
             setListOfRestaurant(filteredData);
           }} >Search</button>
         </div>
-        <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer" onClick={() => {
-          const filteredData = allRestaurant.filter((res) => res.info.avgRating > 4.3);
+        <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer" 
+        onClick={() => {
+          const filteredData = allRestaurant.filter((res) => res.info.avgRating > 4.4);
           setListOfRestaurant(filteredData);
         }}>Top Rated Restaurants</button>
       </div>
