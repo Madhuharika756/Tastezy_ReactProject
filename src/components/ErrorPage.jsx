@@ -1,25 +1,22 @@
 import { useRouteError } from "react-router-dom";
+import { ERROR_IMG_URL } from "../utils/constants";
+import { Fragment } from "react";
 const ErrorPage = () => {
     const err = useRouteError();
     console.log(err)
     return (
         <>
-            <div className="error-main-container">
-                <div className="error-container">
-                    <div className="error-message">
-                        <div className="image">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjS0jEu12cGCjsxtWTQsN6mczasSI1fNx-hQCzOpRwOt4LZJA4Km_mT1_hdwvZWa0yglA&usqp=CAU" alt="error-image" className="error-img" />
-                            <h2>{err.statusText}</h2>
-                        </div>
-                        <div>
-                            <h1>OOPS!🫢</h1>
-                            <h1>Something Went wrong!!</h1>
-                            <h3>This is not the web page you are looking for!!</h3>
-                        </div>
-                    </div>
+            <>
+                <div className="my-auto">
+                    <h2 className=" text-3xl font-bold text-center">{err.statusText}</h2>
+                    <img src={ERROR_IMG_URL} alt="error-image" className="mx-auto"/>
                 </div>
-            </div>
-
+                <div className="text-center">
+                    <h1 className="text-2xl font-bold">OOPS!🫢</h1>
+                    <h1 className="text-xl font-bold">Something Went wrong</h1>
+                    <h3 className="text-xl font-bold">This is not the web page you are looking for!!</h3>
+                </div>
+            </>
 
         </>
     )

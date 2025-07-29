@@ -3,20 +3,13 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import RestaurantCategories from "./RestaurantCategories";
 import { CDN_LINK } from "../utils/constants";
-// https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const RestaurantMenu = () => {
-    const [menuItems, setMenuItems] = useState(null);
     const { resId } = useParams();
 
-    useEffect(() => {
-        fetchData();
-    }, []);
-    const fetchData = async () => {
-        const data = await fetch("https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=" + resId);
-        const json = await data.json();
-        setMenuItems(json.data);
-    };
+    const menuItems = useRestaurantMenu(resId);
+
     if (!menuItems) {
         return <Shimmer />
     }
