@@ -18,10 +18,13 @@ const ItemList = ({ itemCards }) => {
                                 <div className="w-9/12 p-1 flex flex-col">
                                     <div className="flex items-center">
                                     <span className="text-lg font-semibold mr-3">{item?.card?.info?.name}</span>
-                                    <button className="text-white bg-amber-500 hover:bg-amber-600 cursor-pointer font-bold px-3 py-1 rounded-md" onClick={() => {handleAdd(item);
+                                    <button className="text-white bg-amber-500 hover:bg-amber-600 
+                                    cursor-pointer font-bold px-3 py-1 rounded-md" onClick={() => {handleAdd(item);
                                         }}>Add</button>
                                      </div>
-                                    <span className="font-semibold text-orange-500">₹{(item?.card?.info?.price) ? item?.card?.info?.price / 100 : item?.card?.info?.defaultPrice / 100}</span>
+                                    <span className="font-semibold text-orange-500">
+                                        ₹{(item?.card?.info?.price) ? item?.card?.info?.price / 100 
+                                        : item?.card?.info?.defaultPrice / 100}</span>
                                     <span className="text-gray-500 font-semibold">{item?.card?.info?.description}</span>
                                 </div>
                                 <div className="w-3/12 ">

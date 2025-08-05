@@ -15,7 +15,7 @@ const RestaurantCategories = ({ data }) => {
         <div className="w-7/12 bg-gray-50 p-3 shadow-lg mx-auto my-3">
             <div className="flex justify-between hover:cursor-pointer" onClick={handleClick}>
                 <span className="text-lg font-bold">{data.title} ({data.itemCards.length})</span>
-                <span>🔽</span>
+                <span className="font-bold text-xl">⌵</span>
             </div>
             {/* Accodian */}
             <div>
