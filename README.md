@@ -5,11 +5,11 @@ It allows users to explore restaurants, view menus, add items to a cart, and see
 
 🚀 Live Features
 
-🔍 Search by Food Item
+🔍 Search food items
 
-⭐ Filter top-rated Food Items
+⭐ Filter top-rated food items
 
-🍴 View Food details & menus
+🍴 View food details & menus
 
 🧩 Accordion-based menu categories
 
@@ -20,7 +20,6 @@ It allows users to explore restaurants, view menus, add items to a cart, and see
 🔄 Cart persistence using localStorage
 
 ⚡ Shimmer UI for loading state
-
 
 🛠️ Tech Stack
 
@@ -60,27 +59,19 @@ Higher Order Components (HOC)
 
 Conditional rendering
 
-Dynamic routing with URL params
+Dynamic routing with URL parameters
 
 Fixed navigation bar handling
 
 ⚙️ Installation & Setup
-
-Clone the repository
-
+1️⃣ Clone the repository
 git clone https://github.com/your-username/tastezy.git
 
-
-Navigate to project folder
-
+2️⃣ Navigate to project folder
 cd tastezy
 
-
-Install dependencies
-
+3️⃣ Install dependencies
 npm install
 
-
-Start development server
-
+4️⃣ Start development server
 npm run dev
