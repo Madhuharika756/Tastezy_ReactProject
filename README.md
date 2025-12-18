@@ -1,12 +1,86 @@
-# React + Vite
+🍽️ Tastezy – Food Discovery & Cart Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tastezy is a modern React-based food discovery application inspired by real-world food platforms.
+It allows users to explore restaurants, view menus, add items to a cart, and see live price calculations with a smooth, responsive UI.
 
-Currently, two official plugins are available:
+🚀 Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Search by Food Item
 
-## Expanding the ESLint configuration
+⭐ Filter top-rated Food Items
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🍴 View Food details & menus
+
+🧩 Accordion-based menu categories
+
+🛒 Add items to cart with quantity control
+
+💰 Automatic total price calculation
+
+🔄 Cart persistence using localStorage
+
+⚡ Shimmer UI for loading state
+
+
+🛠️ Tech Stack
+
+Frontend: React (Functional Components, Hooks)
+
+Routing: React Router v6
+
+State Management: Redux Toolkit
+
+Styling: Tailwind CSS
+
+Persistence: localStorage
+
+API Integration: Swiggy public APIs
+
+Build Tool: Vite
+
+Language: JavaScript (ES6+)
+
+🧠 Key Concepts Implemented
+
+React Hooks (useState, useEffect, useParams)
+
+Custom Hooks
+
+Redux Toolkit (createSlice, configureStore)
+
+Global cart state management
+
+Quantity-based cart logic
+
+Cart persistence with localStorage
+
+Lazy loading & code splitting
+
+Higher Order Components (HOC)
+
+Conditional rendering
+
+Dynamic routing with URL params
+
+Fixed navigation bar handling
+
+⚙️ Installation & Setup
+
+Clone the repository
+
+git clone https://github.com/your-username/tastezy.git
+
+
+Navigate to project folder
+
+cd tastezy
+
+
+Install dependencies
+
+npm install
+
+
+Start development server
+
+npm run dev

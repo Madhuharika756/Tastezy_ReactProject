@@ -9,7 +9,7 @@ const Header = () => {
   // console.log(cartitems);
   return (
     <>
-      <div className="flex justify-between bg-amber-400 items-center">
+      <div className=" flex justify-between bg-amber-400 items-center">
         <div className="logo">
           <img src={LOGO_URL} alt="logo-image" className="w-18 rounded-full mx-6" />
         </div>
