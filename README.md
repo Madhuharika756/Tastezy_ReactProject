@@ -7,14 +7,14 @@ It allows users to explore restaurants, view menus, add items to a cart, and see
 
 ## 🚀 Live Features
 
--  Search food items  
--  Filter top-rated food items  
--  View food details & menus  
--  Accordion-based menu categories  
--  Add items to cart with quantity control  
--  Automatic total price calculation  
--  Cart persistence using `localStorage`  
--  Shimmer UI for loading state  
+- Search food items  
+- Filter top-rated food items  
+- View food details & menus  
+- Accordion-based menu categories  
+- Add items to cart with quantity control  
+- Automatic total price calculation  
+- Cart persistence using `localStorage`  
+- Shimmer UI for loading state  
 
 ---
 
