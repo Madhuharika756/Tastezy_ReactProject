@@ -1,7 +1,9 @@
 # 🍽️ Tastezy – Food Discovery & Cart Application
 
-Tastezy is a modern React-based food discovery application inspired by real-world food platforms.
-It allows users to explore restaurants, browse menus, add items to a cart, and view real-time price calculations through a smooth and visually clean user interface.
+_Tastezy is a modern **React-based food discovery application** inspired by real-world food platforms.  
+It allows users to explore restaurants, browse menus, add items to a cart, and view **real-time price calculations** through a smooth and visually clean user interface._
+
+
 ---
 
 ## 🚀 Live Features
