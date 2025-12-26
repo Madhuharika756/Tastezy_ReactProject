@@ -36,21 +36,24 @@ const Body = () => {
     <>
       <div className="top-section my-4 flex flex-wrap justify-center">
         <div className="search-section mx-5 ">
-          <input type="text" className="search w-2xl mr-3 p-2 bg-gray-200 rounded-xl" placeholder="Search Food Intem" value={searchText} onChange={(e) => {
-            setSearchtext(e.target.value);
-          }} />
-          <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer"
-            onClick={() => {
-              const filteredData = allRestaurant.filter((res) => res?.info?.name?.toLowerCase().includes(searchText.toLowerCase()));
-              console.log(filteredData);
-              setListOfRestaurant(filteredData);
-            }} >Search</button>
+          <div className="flex flex-col md:flex-row gap-2">
+
+            <input type="text" className="w-full md:w-96 mb-2 md:mb-0 mr-0 md:mr-3 p-2 bg-gray-200 rounded-xl" placeholder="Search Food Intem" value={searchText} onChange={(e) => {
+              setSearchtext(e.target.value);
+            }} />
+            <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer"
+              onClick={() => {
+                const filteredData = allRestaurant.filter((res) => res?.info?.name?.toLowerCase().includes(searchText.toLowerCase()));
+                console.log(filteredData);
+                setListOfRestaurant(filteredData);
+              }} >Search</button>
+            <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer"
+              onClick={() => {
+                const filteredData = allRestaurant.filter((res) => res.info.avgRating > 4.4);
+                setListOfRestaurant(filteredData);
+              }}>Top Rated Food Item</button>
+          </div>
         </div>
-        <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer"
-          onClick={() => {
-            const filteredData = allRestaurant.filter((res) => res.info.avgRating > 4.4);
-            setListOfRestaurant(filteredData);
-          }}>Top Rated Food Item</button>
       </div>
       <div className="restaurantContainer flex flex-wrap justify-center">
         {
