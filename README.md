@@ -6,6 +6,12 @@ It allows users to explore restaurants, browse menus, add items to a cart, and v
 
 ---
 
+## 🔗 Live Demo
+
+👉 https://tastezy-food-explorer.vercel.app/
+
+---
+
 ## 🚀 Live Features
 
 - Search food items  

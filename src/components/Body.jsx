@@ -34,7 +34,7 @@ const Body = () => {
   }
   return allRestaurant.length === 0 ? (<Shimmer />) : (
     <>
-      <div className="top-section my-4 flex flex-wrap justify-center">
+      <div className="top-section my-4 flex flex-wrap justify-center sticky top-[72px] bg-white z-40 py-3">
         <div className="search-section mx-5 ">
           <div className="flex flex-col md:flex-row gap-2">
 
