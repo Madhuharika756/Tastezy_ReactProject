@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import ItemList from "./ItemList";
 import { clearCart } from "../slices/cartSlice";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
@@ -22,9 +23,17 @@ const Cart = () => {
       </h1>
 
       {cartItems.length === 0 ? (
-        <h2 className="text-center text-xl">
-          Your cart is empty 🍽️
-        </h2>
+        <div className="text-center mt-8">
+          <h2 className="text-xl mb-4">
+            Your cart is empty 🍽️
+          </h2>
+
+          <Link to="/">
+            <button className="bg-amber-500 text-white px-5 py-2 rounded-md hover:bg-amber-600 transition">
+              Go to Home
+            </button>
+          </Link>
+        </div>
       ) : (
         <>
           <ItemList itemCards={cartItems} />
